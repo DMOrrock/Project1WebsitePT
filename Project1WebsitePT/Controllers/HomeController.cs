@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project1WebsitePT.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -35,11 +36,21 @@ namespace Project1WebsitePT.Controllers
 
             return View();
         }
-        public ActionResult ExerciseInfo()
+        public ActionResult ExerciseInfo(string exName)
         {
-            ViewBag.Message = "your Excercise Info Page";
 
-            return View();
+            Exercise displayExcercise = new Exercise
+            {
+                Name = exName,
+                MuscleGroup = "Gastrocnemius Lateral Head",
+                RepNumber = 3,
+                Time = "30 Seconds",
+                Graphic = "https://www.researchgate.net/profile/Carl_De_Cree/publication/278157290/figure/fig3/AS:667621817073678@1536184853237/Anatomy-of-the-posterior-calf-of-the-right-leg-Modified-after-2-by-kind-permission-of.png",
+                SimilarEX1 = "calf raises",
+                SimilarEX2 = "Standing IT Band Stretch"
+            }; //rather have a static array of exercises where you and find the item. using the name passed in. 
+
+            return View(displayExcercise);
         }
         public ActionResult LogIn()
         {
