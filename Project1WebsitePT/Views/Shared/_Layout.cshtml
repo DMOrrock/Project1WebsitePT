@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title -  Professional Physical Therapy & Sports Medicine</title>
+    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -24,7 +25,7 @@
                     <li>@Html.ActionLink("ABOUT", "About", "Home")</li>
                     <li>@Html.ActionLink("CONTACT", "Contact", "Home")</li>
                     <li>@Html.ActionLink("EXERCISES", "Exercise", "Home")</li>
-                    <li>@Html.ActionLink("LOG IN", "LogIn", "Home")</li>
+                    <li>@Html.ActionLink("LOG IN", "PatientLogin", "Patient")</li>
                 </ul>
             </div>
         </div>
@@ -33,7 +34,9 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year -Brandon Navarro, Dakota Orrock, Jo-Yu Wu, Sunny Yang, Victoria Black </p>
+
+            <p>&copy; @DateTime.Now.Year - ORROCK / MENDENHALL</p>
+
         </footer>
     </div>
 
