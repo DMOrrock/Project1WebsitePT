@@ -22,7 +22,7 @@ namespace Project1WebsitePT.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contact us to schedule an appointment!";
 
             return View();
         }
