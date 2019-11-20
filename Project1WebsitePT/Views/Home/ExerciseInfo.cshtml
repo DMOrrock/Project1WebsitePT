@@ -1,0 +1,74 @@
+﻿@model Project1WebsitePT.Models.Exercise
+
+@{
+    ViewBag.Title = "ExerciseInfo";
+}
+
+<h2>ExerciseInfo</h2>
+
+<div>
+    <h4>Exercise</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MuscleGroup)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MuscleGroup)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RepNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RepNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Graphic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Graphic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SimilarEX1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SimilarEX1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SimilarEX2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SimilarEX2)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
