@@ -26,5 +26,11 @@ namespace Project1WebsitePT.Controllers
 
             return View();
         }
+        public ActionResult Exercise()
+        {
+            ViewBag.Message = "no view but will have one";
+
+            return View();
+        }
     }
 }
