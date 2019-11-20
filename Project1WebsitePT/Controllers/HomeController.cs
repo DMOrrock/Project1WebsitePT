@@ -28,7 +28,13 @@ namespace Project1WebsitePT.Controllers
         }
         public ActionResult Exercise()
         {
-            ViewBag.Message = "no view but will have one";
+            ViewBag.Message = "your Excercise Page";
+
+            return View();
+        }
+        public ActionResult LogIn()
+        {
+            ViewBag.Message = "your Excercise Page";
 
             return View();
         }
