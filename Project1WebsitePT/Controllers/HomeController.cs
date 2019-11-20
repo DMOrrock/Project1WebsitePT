@@ -28,7 +28,7 @@ namespace Project1WebsitePT.Controllers
             return View();
         }
 
-        public static List<string> exercises = new List<String>() { "Calf stretch", "Hamstring Stretch", "Wall Push Up" };
+        public static List<string> exercises = new List<String>() { "Calf Stretch", "Hamstring Stretch", "Wall Push Up" };
         public ActionResult Exercise()
         {
             ViewBag.Exercises = exercises;
@@ -45,7 +45,7 @@ namespace Project1WebsitePT.Controllers
                 MuscleGroup = "Gastrocnemius Lateral Head",
                 RepNumber = 3,
                 Time = "30 Seconds",
-                Graphic = "https://www.researchgate.net/profile/Carl_De_Cree/publication/278157290/figure/fig3/AS:667621817073678@1536184853237/Anatomy-of-the-posterior-calf-of-the-right-leg-Modified-after-2-by-kind-permission-of.png",
+                Graphic = "https://www.healthlinkbc.ca/sites/default/libraries/healthwise/media/medical/hw/hwkb17_077.jpg",
                 SimilarEX1 = "calf raises",
                 SimilarEX2 = "Standing IT Band Stretch"
             }; //rather have a static array of exercises where you and find the item. using the name passed in. 
