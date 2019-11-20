@@ -127,3 +127,20 @@ textarea {
     font-size: 24px;
     padding: 30px 16px;
 }
+
+.banner-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.centered-banner {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.big-text {
+    font-size: 100px;
+}
