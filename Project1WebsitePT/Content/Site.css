@@ -71,10 +71,12 @@ textarea {
 
 .exerciseTop {
     background: linear-gradient(to top, transparent, #000000), url('images/exercise.jpg');
-    background-size: 90%, 10%;
+    background-position:center;
+    background-size: 1200px;
     color: white;
     font-weight: 300;
     background-size: inherit;
+    padding: 30px;
 }
 .EXTitle {
     font-size: 200px;
@@ -126,4 +128,12 @@ textarea {
     background-color: #1e3e4c;
     font-size: 24px;
     padding: 30px 16px;
+}
+
+.theEXTitle {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.EXimage {
+    height: 400px;
 }

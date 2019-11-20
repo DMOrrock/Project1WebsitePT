@@ -2,25 +2,28 @@
 @{
     ViewBag.Title = "Exercise";
 }
-
+<br />
+<br />
 <div class="jumbotron text-center exerciseTop">
+    <br />
     <h2>ORROCK/MENDENHALL</h2>
     <h1 class="EXTitle">EXERCISES</h1>
-    <br/>
-    <br/>
-    <h3>“All growth depends upon activity. There is no development physically or intellectually without effort, and effort means work.” – Calvin Coolidge</h3>
+    <br />
+    <br />
 </div>
-<br/>
-<br/>
+<br />
+<h2 class="text-center">“All growth depends upon activity. There is no development physically or intellectually without effort, and effort means work.” – Calvin Coolidge</h2>
+<br />
 <div class="text-center">
     <div class="dropdown">
         <button class="dropbtn">Choose An Exercise</button>
         <div class="dropdown-content">
-            @foreach (string item in @ViewBag.Exercises)
+            @foreach (string name in @ViewBag.Exercises)
             {
-                
-                @Html.ActionLink(@item, "ExerciseInfo", "Home")
+
+                @Html.ActionLink(@name, "ExerciseInfo", "Home", new { exName = @name }, null)// passing in the name as the parameter for the Exercise info page
             }
         </div>
     </div>
 </div>
+<br /><br /> <br /><br />

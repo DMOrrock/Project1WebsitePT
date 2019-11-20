@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project1WebsitePT.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -27,7 +28,7 @@ namespace Project1WebsitePT.Controllers
             return View();
         }
 
-        public static List<string> exercises = new List<String>() { "Calf stretch", "Hamstring Stretch", "Wall Push Up" };
+        public static List<string> exercises = new List<String>() { "Calf Stretch", "Hamstring Stretch", "Wall Push Up" };
         public ActionResult Exercise()
         {
             ViewBag.Exercises = exercises;
@@ -35,11 +36,21 @@ namespace Project1WebsitePT.Controllers
 
             return View();
         }
-        public ActionResult ExerciseInfo()
+        public ActionResult ExerciseInfo(string exName)
         {
-            ViewBag.Message = "your Excercise Info Page";
 
-            return View();
+            Exercise displayExcercise = new Exercise
+            {
+                Name = exName,
+                MuscleGroup = "Gastrocnemius Lateral Head",
+                RepNumber = 3,
+                Time = "30 Seconds",
+                Graphic = "https://www.healthlinkbc.ca/sites/default/libraries/healthwise/media/medical/hw/hwkb17_077.jpg",
+                SimilarEX1 = "calf raises",
+                SimilarEX2 = "Standing IT Band Stretch"
+            }; //rather have a static array of exercises where you and find the item. using the name passed in. 
+
+            return View(displayExcercise);
         }
         public ActionResult LogIn()
         {

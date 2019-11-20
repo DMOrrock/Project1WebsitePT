@@ -3,72 +3,39 @@
 @{
     ViewBag.Title = "ExerciseInfo";
 }
-
-<h2>ExerciseInfo</h2>
-
-<div>
-    <h4>Exercise</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.MuscleGroup)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.MuscleGroup)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.RepNumber)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.RepNumber)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Time)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Time)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.graphic)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.graphic)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SimilarStretch1)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SimilarStretch1)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SimilarStretch2)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SimilarStretch2)
-        </dd>
-
-    </dl>
+<br />
+<br />
+<div class="jumbotron text-center exerciseTop">
+    <br />
+    <h2>ORROCK/MENDENHALL</h2>
+    <h1 class="EXTitle">EXERCISES</h1>
+    <br />
+    <br />
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+<h4>
+    @Html.ActionLink("Back to List", "Exercise")
+</h4>
+<br />
+<h1 class="theEXTitle"> @Html.DisplayFor(model => model.Name)</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <h3><b>@Html.DisplayNameFor(model => model.MuscleGroup) </b> @Html.DisplayFor(model => model.MuscleGroup)</h3>
+            <h3><b>@Html.DisplayNameFor(model => model.RepNumber) </b> @Html.DisplayFor(model => model.RepNumber)</h3>
+            <h3><b>@Html.DisplayNameFor(model => model.Time)</b>  @Html.DisplayFor(model => model.Time)</h3>
+            <h3><b>@Html.DisplayNameFor(model => model.SimilarEX1) </b>Html.DisplayFor(model => model.SimilarEX1)</h3>
+            <h3><b>@Html.DisplayNameFor(model => model.SimilarEX2) </b> Html.DisplayFor(model => model.SimilarEX2)</h3>
+        </div>
+        <div class="col-md-"><img src=@Html.DisplayFor(model =>model.Graphic) @*How to display the image with the string stored inside the mdoel *@</div>
+    </div>
+</div>
+<br />
+<br />
+<form>
+    <div class="form-group">
+        <b><label for="exQuestions">Ask the Therapists a Question:</label></b>
+        <textarea class="form-control" id="exQuestions" rows="3"></textarea>
+        <br/>
+        <button type="submit" class="btn btn-dark ">Submit</button>
+    </div>
+</form>
