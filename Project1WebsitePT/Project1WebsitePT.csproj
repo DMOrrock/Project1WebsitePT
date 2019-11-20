@@ -131,12 +131,14 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\images\AboutUsPic.jpg" />
+    <Content Include="Content\images\AboutUsPicCropped.jpg" />
     <Content Include="Content\images\B&amp;Wrunning.jpg" />
     <Content Include="Content\images\frontPage.png" />
     <Content Include="Content\images\meditate.jpg" />
+    <Content Include="Content\images\Running in park.jpg" />
     <Content Include="Content\images\running.jpg" />
     <Content Include="Content\images\stretch.jpg" />
+    <Content Include="Content\images\Teamwork.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
