@@ -26,9 +26,18 @@ namespace Project1WebsitePT.Controllers
 
             return View();
         }
+
+        public static List<string> exercises = new List<String>() { "Calf stretch", "Hamstring Stretch", "Wall Push Up" };
         public ActionResult Exercise()
         {
+            ViewBag.Exercises = exercises;
             ViewBag.Message = "your Excercise Page";
+
+            return View();
+        }
+        public ActionResult ExerciseInfo()
+        {
+            ViewBag.Message = "your Excercise Info Page";
 
             return View();
         }

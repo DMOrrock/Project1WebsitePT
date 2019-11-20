@@ -133,6 +133,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\images\AboutUsPic.jpg" />
     <Content Include="Content\images\B&amp;Wrunning.jpg" />
+    <Content Include="Content\images\exercise.jpg" />
     <Content Include="Content\images\frontPage.png" />
     <Content Include="Content\images\meditate.jpg" />
     <Content Include="Content\images\running.jpg" />
@@ -168,6 +169,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Exercise.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
