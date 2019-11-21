@@ -23,8 +23,8 @@
             <h3><b>@Html.DisplayNameFor(model => model.MuscleGroup) </b> @Html.DisplayFor(model => model.MuscleGroup)</h3>
             <h3><b>@Html.DisplayNameFor(model => model.RepNumber) </b> @Html.DisplayFor(model => model.RepNumber)</h3>
             <h3><b>@Html.DisplayNameFor(model => model.Time)</b>  @Html.DisplayFor(model => model.Time)</h3>
-            <h3><b>@Html.DisplayNameFor(model => model.SimilarEX1) </b>Html.DisplayFor(model => model.SimilarEX1)</h3>
-            <h3><b>@Html.DisplayNameFor(model => model.SimilarEX2) </b> Html.DisplayFor(model => model.SimilarEX2)</h3>
+            <h3><b>@Html.DisplayNameFor(model => model.SimilarEX1) </b> @Html.DisplayFor(model => model.Time)</h3>
+            <h3><b>@Html.DisplayNameFor(model => model.SimilarEX2) </b> @Html.DisplayFor(model => model.SimilarEX2)</h3>
         </div>
         <div class="col-md-"><img src=@Html.DisplayFor(model =>model.Graphic) @*How to display the image with the string stored inside the mdoel *@</div>
     </div>
@@ -33,9 +33,17 @@
 <br />
 <form>
     <div class="form-group">
-        <b><label for="exQuestions">Ask the Therapists a Question:</label></b>
-        <textarea class="form-control" id="exQuestions" rows="3"></textarea>
-        <br/>
+        <b><label for="exQuestions">Share your testimonial:</label></b>
+        <textarea class="form-control" id="exQuestions" rows="5"></textarea>
+        <br />
         <button type="submit" class="btn btn-dark ">Submit</button>
-    </div>
-</form>
+     </div>
+ </form>
+        <form>
+            <div class="form-group">
+                <b><label for="Comments">Respond</label></b>
+                <textarea class="form-control" id="Comments" rows="2"></textarea>
+                <br />
+                <button type="submit" class="btn btn-dark ">Submit</button>
+            </div>
+        </form>
