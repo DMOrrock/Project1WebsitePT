@@ -54,7 +54,7 @@ namespace Project1WebsitePT.Controllers
         }
         public ActionResult LogIn()
         {
-            ViewBag.Message = "your Excercise Page";
+            ViewBag.Message = "Patient Portal";
 
             return View();
         }

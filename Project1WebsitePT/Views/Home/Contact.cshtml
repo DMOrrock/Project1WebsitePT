@@ -2,9 +2,10 @@
     ViewBag.Title = "Contact";
 }
 
-
+<link href="~/Content/StyleSheet1.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
 <div class="container">
-    <div class="jumbotron text-center contact-title">
+    <div class="jumbotron text-center contactTop">
         <div class="jumbotron-title">
             <h2>ORROCK/MENDENHALL</h2>
             <h1 class="EXTitle">CONTACT</h1>
@@ -18,27 +19,38 @@
             (801) 373-1053
         </address>
 
-        <address>
+        <address class="email">
             <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
             <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
         </address>
     </div>
-    
+
 </div>
 
 <style>
-    .address{
+    .address {
         font-size: 16px;
         margin: auto;
         text-align: center;
         width: 50%;
     }
 
-    .contact-title {
+    .contactTop {
         margin: 5vh;
+        background-image: url('../../Content/images/contact.jpg');
+        background-position: center;
+        background-size: 1200px;
+        color: #686363;
+        font-weight: 300;
+        background-size: inherit;
+        padding: 30px;
+    }
+
+    .email a {
+        text-decoration:none;
     }
 
     .title {
-        text-align:center;
+        text-align: center;
     }
 </style>
