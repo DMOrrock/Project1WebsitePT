@@ -1,56 +1,124 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
+<link href="~/Content/Contact/ContactPage.css" rel="stylesheet" />
 
-<link href="~/Content/StyleSheet1.css" rel="stylesheet" />
-<link href="~/Content/Site.css" rel="stylesheet" />
-<div class="container">
-    <div class="jumbotron text-center contactTop">
-        <div class="jumbotron-title">
-            <h2>ORROCK/MENDENHALL</h2>
-            <h1 class="EXTitle">CONTACT</h1>
-        </div>
-    </div>
-    <div class="address">
+
+<div class="jumbotron contactBanner text-center">
+    <h1>Contact Us</h1>
+</div>
+<div style="text-align:center">
+    <a class="btn btn-primary" href="#orem">OREM OFFICE</a> |
+    <a class="btn btn-primary" href="#lehi">LEHI OFFICE</a> |
+    <a class="btn btn-primary" href="#alpine">ALPINE OFFICE</a>
+</div>
+<br />
+
+<!--OREM OFFICE-->
+<div class="jumbotron" id="orem">
+    <h2>Orem</h2>
+</div>
+<div class="row" style="text-align:center">
+    <div class="column addressText">
+        <strong>Orem Office</strong>
+
         <address>
             1325 S 800 E #215<br />
             Orem, UT 84097<br />
             <abbr title="Phone">Phone:</abbr>
             (801) 373-1053
         </address>
+        <p>
+            <strong>Office Hours:</strong> <br />
+            MW: 8am- 10:30am; 1:30pm-5:30pm <br />
+            Tu: 7am-10:30am; 1:30pm-3:30pm <br />
+            Th: 7am-10:30am; 1:30pm-3:30pm <br />
+            Fr: 7:30am-11:00am; 1:30pm-4:30pm. <br />
+            Sat: By appointment only starting at 6:30am.
+        </p>
+    </div>
+    <div style="column-count:1">
+        <img class="officeImg" src="~/Content/Contact/cImages/orem-staff-1.jpg" />
+    </div>
+</div>
+<br />
+<hr />
+<div style="text-align:center">
+    <iframe class="text-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3044.1427008971523!2d-111.67766514883235!3d40.272580179280936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9a879e9a6417%3A0x40225301c3729999!2sOrrock-Mendenhall%20Sports%20Medicine!5e0!3m2!1sen!2sus!4v1574283647831!5m2!1sen!2sus" width="600" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <br />
+    <a href="#top">Back to Top</a>
+</div>
+<br /><br />
 
-        <address class="email">
-            <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+<!--LEHI OFFICE-->
+<div class="jumbotron" id="lehi">
+    <h2>Lehi</h2>
+</div>
+<div class="row" style="text-align:center">
+    <div class="column addressText">
+        <strong>Lehi Office</strong>
+        <address>
+            680 E Main St #101<br />
+            Lehi, UT 84043<br />
+            <abbr title="Phone">Phone:</abbr>
+            (801) 768-2723
         </address>
+        <p>
+            <strong>Office Hours:</strong> <br />
+            MW: 8am- 10:30am; 1:30pm-5:30pm <br />
+            Tu: 7am-10:30am; 1:30pm-3:30pm <br />
+            Th: 7am-10:30am; 1:30pm-3:30pm <br />
+            Fr: 7:30am-11:00am; 1:30pm-4:30pm. <br />
+            Sat: By appointment only starting at 6:30am.
+        </p>
+    </div>
+    <div class="column">
+        <img class="officeImg" src="~/Content/Contact/cImages/Lehi-Staff.jpg" />
     </div>
 
 </div>
-
-<style>
-    .address {
-        font-size: 16px;
-        margin: auto;
-        text-align: center;
-        width: 50%;
-    }
-
-    .contactTop {
-        margin: 5vh;
-        background-image: url('../../Content/images/contact.jpg');
-        background-position: center;
-        background-size: 1200px;
-        color: #686363;
-        font-weight: 300;
-        background-size: inherit;
-        padding: 30px;
-    }
-
-    .email a {
-        text-decoration:none;
-    }
-
-    .title {
-        text-align: center;
-    }
-</style>
+<br />
+<hr />
+<div style="text-align:center">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.954998396014!2d-111.84102694882915!3d40.38768997926712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d81c929524b6b%3A0x67ce4487332af018!2sOrrock%20Mendenhall%20Sports%20Medicine%20-%20Lehi%20Office!5e0!3m2!1sen!2sus!4v1574307254050!5m2!1sen!2sus" width="600" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <br />
+    <a href="#top">Back to Top</a>
+</div>
+<br /><br />
+<!--ALPINE OFFICE-->
+<div class="jumbotron" id="alpine">
+    <h2>Alpine</h2>
+</div>
+<div class="row" style="text-align:center">
+    <div class="column addressText">
+        <strong>Alpine Office</strong>
+        <address>
+            155 W Canyon Crest Rd #100<br />
+            Alpine, UT 84004<br />
+            <abbr title="Phone">Phone:</abbr>
+            (801) 756-7061
+        </address>
+        <p>
+            <strong>Office Hours:</strong> <br />
+            MW: 8am- 10:30am; 1:30pm-5:30pm <br />
+            Tu: 7am-10:30am; 1:30pm-3:30pm <br />
+            Th: 7am-10:30am; 1:30pm-3:30pm <br />
+            Fr: 7:30am-11:00am; 1:30pm-4:30pm. <br />
+            Sat: By appointment only starting at 6:30am.
+        </p>
+    </div>
+    <div class="column">
+        <img class="officeImg" src="~/Content/Contact/cImages/New-Alpin-Staff-image.jpg" />
+    </div>
+</div>
+<br />
+<hr />
+<div style="text-align:center">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.214753904832!2d-111.78297938460307!3d40.448383579361426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87527f5edd6f4a93%3A0x1cce13bfa0043ebb!2sOrrock%20Mendenhall%20Sports%20Medicine-%20Alpine%20Office!5e0!3m2!1sen!2sus!4v1574293872181!5m2!1sen!2sus" width="600" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <br />
+    <a href="#top">Back to Top</a>
+</div>
+<br /><br />
+<address>
+    <strong>Contact Page Tech Support:</strong>   <a href="mailto:bknavarro2@gmail.com">bknavarro2@gmail.com</a><br />
+</address>

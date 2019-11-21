@@ -146,3 +146,22 @@ textarea {
 .jumbotron-title {
     margin: 5vh;
 }
+
+.about-page-b-pic {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-page-b-text-center {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.about-page-big-letters {
+    font-size: 100px;
+}
