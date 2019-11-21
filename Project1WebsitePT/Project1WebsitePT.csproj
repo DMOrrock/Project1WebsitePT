@@ -121,9 +121,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PatientController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Exercise.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -138,10 +140,16 @@
     <Content Include="Content\Contact\ContactPage.css" />
     <Content Include="Content\images\AboutUsPic.jpg" />
     <Content Include="Content\images\B&amp;Wrunning.jpg" />
+    <Content Include="Content\images\exercise.jpg" />
+    <Content Include="Content\images\facebook.png" />
     <Content Include="Content\images\frontPage.png" />
+    <Content Include="Content\images\google-plus.png" />
+    <Content Include="Content\images\instagram.png" />
     <Content Include="Content\images\meditate.jpg" />
     <Content Include="Content\images\running.jpg" />
     <Content Include="Content\images\stretch.jpg" />
+    <Content Include="Content\images\twitter.png" />
+    <Content Include="Content\StyleSheet1.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -173,10 +181,12 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Exercise.cshtml" />
+    <Content Include="Views\Home\ExerciseInfo.cshtml" />
+    <Content Include="Views\Patient\PatientLogin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

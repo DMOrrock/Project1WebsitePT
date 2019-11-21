@@ -4,11 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title -  Professional Physical Therapy & Sports Medicine</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top"  style="background-color: #c4c4c4; border: none">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -24,7 +25,7 @@
                     <li>@Html.ActionLink("ABOUT", "About", "Home")</li>
                     <li>@Html.ActionLink("CONTACT", "Contact", "Home")</li>
                     <li>@Html.ActionLink("EXERCISES", "Exercise", "Home")</li>
-                    <li>@Html.ActionLink("LOG IN", "LogIn", "Home")</li>
+                    <li>@Html.ActionLink("LOG IN", "PatientLogin", "Patient")</li>
                 </ul>
             </div>
         </div>
@@ -33,7 +34,9 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+
+            <p>&copy; @DateTime.Now.Year - ORROCK / MENDENHALL</p>
+
         </footer>
     </div>
 

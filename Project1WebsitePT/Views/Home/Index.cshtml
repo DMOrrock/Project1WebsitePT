@@ -2,62 +2,61 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron frontPage text-center">
+<link href="~/Content/StyleSheet1.css" rel="stylesheet" />
+
+<div class="jumbotron frontPage text-center index-title">
     <h2>ORROCK/MENDENHALL</h2>
     <h1 class="indexTitle">SPORTS MEDICINE</h1>
     <h2>& PHYSICAL THERAPY</h2>
     <h3>Your Neighborhood Training Room</h3>
     <br />
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg myButton">Get a Free Injury Assessment &raquo;</a></p>
+    <p>@Html.ActionLink("Check out our in home exercises >> ", "Exercise", "Home", null, new { @class = "btn btn-default btn-lg" })</p>
 </div>
 
 <div>
+
     <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>
-            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <div class="col-md-6">
+            <h2>Schedule an Appointment</h2>
+            <p>We have three convenient locations to serve you.</p>
+            <p><a class="btn btn-default" href="https://www.proptutah.com/">Find Locations &raquo;</a></p>
         </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <div class="col-md-6">
+            <h2>Contact Us</h2>
+            <p>Is it hurt? give us a call.</p>
+            <p><a class="btn btn-default" href="https://www.proptutah.com/">Contact Us &raquo;</a></p>
         </div>
     </div>
 </div>
+
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+
     <!-- Indicators -->
+
     <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
     </ol>
 
-    <!-- Wrapper for slides -->
+ 
     <div class="carousel-inner">
         <div class="item active">
-            <img src="~/Content/Images/frontPage.png" />
+            <img src="~/Content/Images/frontPage.png" style="height: 600px; width:1400px;">
             <div class="carousel-caption">
-                <!--<h3>Caption Text</h3>-->
+                <h3>
+                    Caption Text
+                </h3>
             </div>
         </div>
         <div class="item">
-            <img src="~/Content/Images/stretch.jpg" />
-            <div class="carousel-caption">
+            <img src="~/Content/Images/stretch.jpg" style="height: 600px;  width:1400px;">
+            <div class="carousel-caption"  >
                 <h3>Caption Text</h3>
             </div>
         </div>
         <div class="item">
-            <img src="~/Content/Images/running.jpg" />
+            <img src="~/Content/Images/running.jpg" style="height: 600px;  width:1400px;">
             <div class="carousel-caption">
                 <h3>Caption Text</h3>
             </div>
@@ -65,12 +64,14 @@
     </div>
 
     <!-- Controls -->
+
     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
     </a>
     <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
+
 </div> <!-- Carousel -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -79,3 +80,27 @@
         interval: 3000
     })
 </script>
+
+<style>
+    .col-md-6 {
+        text-align:center;
+    }
+
+    .index-title {
+        margin: 5vh;
+    }
+</style>
+
+
+<br /><br />
+<div class="section"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=18u0hphWvyCd4VPDdC05cLKSnzKOU3dbd" width="100%" height="480"></iframe></div>
+<br />
+<h3 class="text-center">
+    Follow Us On Social Media
+</h3>
+<div class="image-container">
+    <a href="https://www.facebook.com/orrockmendenhallpt" target="_blank"><img src="~/Content/images/facebook.png" height="40" width="40"></a> &nbsp &nbsp
+    <a href="https://twitter.com/pro_ptsm" target="_blank"><img src="~/Content/images/twitter.png" height="40" width="40"></a> &nbsp &nbsp
+    <a href="https://www.instagram.com/orrock_mendenhall_pt/" target="_blank"><img src="~/Content/images/instagram.png" height="40" width="40"></a> &nbsp &nbsp
+</div>
+
