@@ -1,14 +1,16 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<img class="banner-image" src="~/Content/images/AboutUsPicCropped.jpg" alt="sunrise" />
+<div class="banner-container">
+    <img class="banner-image" src="~/Content/images/AboutUsPicCropped.jpg" alt="sunrise" />
+</div>
 <div class="centered-banner">
     <h1 class="big-text">
         <strong>ABOUT US:</strong>
     </h1>
 </div>
-<br />
-<div class="about-page-text container">
+
+<div class="about-page-text">
     <h1 class="text-center">
         <strong>Our Story - </strong>
     </h1>
@@ -42,3 +44,10 @@
         </h2>
     </p>
 </div>
+
+<style>
+    .banner-image {
+        margin: 5vh;
+        width: 80vw;
+    }
+</style>
