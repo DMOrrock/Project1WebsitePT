@@ -1,17 +1,44 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    1325 S 800 E #215<br />
-    Orem, UT 84097<br />
-    <abbr title="Phone">Phone:</abbr>
-    (801) 373-1053
-</address>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<div class="container">
+    <div class="jumbotron text-center contact-title">
+        <div class="jumbotron-title">
+            <h2>ORROCK/MENDENHALL</h2>
+            <h1 class="EXTitle">CONTACT</h1>
+        </div>
+    </div>
+    <div class="address">
+        <address>
+            1325 S 800 E #215<br />
+            Orem, UT 84097<br />
+            <abbr title="Phone">Phone:</abbr>
+            (801) 373-1053
+        </address>
+
+        <address>
+            <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+        </address>
+    </div>
+    
+</div>
+
+<style>
+    .address{
+        font-size: 16px;
+        margin: auto;
+        text-align: center;
+        width: 50%;
+    }
+
+    .contact-title {
+        margin: 5vh;
+    }
+
+    .title {
+        text-align:center;
+    }
+</style>
